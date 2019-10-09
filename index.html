@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Haircut Ninja</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+
+    <body>
+
+    <!-- Navigation bar -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Haircut Ninja</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about" data-toggle="modal" data-target="#aboutModal">About Us <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#appointment">Appointment <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#Gallery">Gallery <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          What we have for you
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#haircut">Haircut</a>
+          <a class="dropdown-item" href="#haircoloring">Coloring</a>
+            <a class="dropdown-item" href="#hairextensions">Hair Extensions</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#Products">Need something else?</a>
+        </div>
+      </li>
+           <li class="nav-item active">
+        <a class="nav-link" href="#contact" data-toggle="modal" data-target="#contactModal">Contact <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+ <!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid" src="Haircut.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" src="Haircoloring.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="img-fluid" src="Hairextension.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <!-- Our offer -->
+     <div class="container mt-4" id="Our services">
+        <h2 class="text-center">Our services</h2>
+     </div>
+
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="haircut">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Haircut
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">Just choose your style and enjoy with our hair-experts!
+      </div>
+         <img width="" class="img-fluid" src="Haircutcollapse.jpg" alt="hairextensionpicture2">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="haircoloring">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Haircoloring
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+      From completely light to very dark shades. From Earth to the Moon and back! :)
+      </div>
+        <img width="" class="img-fluid" src="Haircoloringcollapse.jpg" alt="hairextensionpicture2">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="hairextensions">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Hair extensions
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       Short, medium, too short, too..something..don't worry, we have the solution!
+      </div>
+        <img width="" class="img-fluid" src="Hairextensioncollapse.jpg" alt="hairextensionpicture2">
+    </div>
+  </div>
+</div>
+
+    <!-- Appointment -->
+    <div class="container mt-4" id="appointment">
+        <h2 class="text-center">Make an appointment</h2>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-1 form-group">
+                <input type="text" class="form-control" placeholder="First and last name">
+
+                <input type="text" class="form-control mt-2" placeholder="Phone number">
+
+                <input type="text" class="form-control mt-2" placeholder="Date">
+
+                <textarea class="form-control mt-2" placeholder="Other info" rows="5"></textarea>
+
+                <input type="checkbox" class="mt-3"> I agree that you contact me if the appointment need to be postponed.
+<p>
+                <button class="btn btn-success center-block mt-3">Send</button>
+</p>
+            </div>
+
+            <div class="col-md-4 offset-md-1">
+                <table class="table table-striped table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Working hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>12:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <p>* We don't work on Sundays and holidays.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+      <div class="container mt-4" id="Gallery">
+        <h2 class="text-center">Gallery</h2>
+     </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                       Our team is here for you...
+                        <br>
+                        bla bla
+                    </p>
+
+                    <p>
+                        Superb service combined with leisure environment. Relax and enjoy.
+                        bla bla
+                        bla bla
+                    </p>
+
+                    <img width="" class="img-fluid" src="team.jpg" alt="hairdresser image 1">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong> Haircut Ninja Salon </strong>
+                    </p>
+                    <p>
+                        Phone: +385 1 555 555
+                    </p>
+                    <p>Address: Ninja Street 52
+                    <br>Zagreb, Croatia
+                    </p>
+                    <p>E-mail: <a href="info@ninjahaircut.org">info@ninjahaircut.org</a></p>
+
+                    <img width="" class="img-fluid" src="salon.jpg" alt="hairdresser image 1">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Gallery-->
+    <table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col" id="Products">Products</th>
+      <th scope="col">Man cut</th>
+      <th scope="col">Woman cut</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><img width="" class="img-fluid" src="Colorproducts.jpg" alt="hairextensionpicture2">
+          </th>
+      <td><img width="" class="img-fluid" src="Gallery1.jpg" alt="hairextensionpicture2">
+          Mark</td>
+      <td><img width="" class="img-fluid" src="Gallery3.jpg" alt="hairextensionpicture2">
+          Anna</td>
+    </tr>
+    <tr>
+      <th scope="row"><img width="" class="img-fluid" src="Gelproducts.jpg" alt="hairextensionpicture2"></th>
+      <td><img width="" class="img-fluid" src="Gallery2.jpg" alt="hairextensionpicture2">
+          Jacob</td>
+      <td><img width="" class="img-fluid" src="Gallery4.jpg" alt="hairextensionpicture2">
+          Clara</td>
+    </tr>
+  </tbody>
+</table>
+
+    </body>
+</html>
